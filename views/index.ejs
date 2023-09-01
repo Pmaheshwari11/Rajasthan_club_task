@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajasthan Club's Task</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&family=Kalam&family=Merriweather&family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+    <link rel="StyleSheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        class="brand-logo"
+        src="Images/photo_2023-08-30_20-41-26-removebg-preview.png"
+      />
+      <div class="navbar-brand">म्हारो राजस्थान</div>
+      <div class="navbar-items">
+        <button class="nav-button" onclick="nav_btn()">
+          <img class="nav-img" src="Images/menu.png" />
+        </button>
+        <div class="nav-links">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/about">Members</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome">
+      <img
+        class="welcome-img"
+        src="Images/pngtree-indian-man-with-turban-rajasthani-men-welcome-namaste-greetings-png-image_6119228.png"
+      />
+      <h1 class="welcome-text">खम्मा घणी सा</h1>
+    </div>
+
+    <section id="content">
+      <div class="content">
+        <div class="content-container">
+          <p class="content-para">
+            Rajasthan is one of the most vibrant and colorful states in India
+            with its rich culture and traditions since ancient times. It is
+            known as the land of warriors and beautiful princess who even chose
+            to die for saving their chastity and had a great affinity with their
+            motherland. Whether it is the cuisine or the dress sense everything
+            is unique about Rajasthan's culture. There are many famous forts and
+            palaces along with wildlife sanctuaries and other monuments which
+            has attracted thousands of visitors and some of them have become a
+            part of UNESCO World Heritage Site as well.
+          </p>
+          <div class="heritage">
+            <h2 class="section-heading">Heritage Sites</h2>
+            <div class="chittorgarh-fort">
+              <h3 class="content-heading">Chittorgarh Fort</h3>
+              <img class="content-img" src="Images/chittorgarh-fort.jpg" />
+              <p class="content-para">
+                The Chittorgarh fort stands as the testimony of the Rajputana
+                architecture and is known among the people because of its
+                massive structure. According to mythology Bhima who was one of
+                the Brother of Pandavas during the Mahabharat has built this
+                Chittorgarh fort in one night. The most important thing is that
+                it has been declared the UNESCO World Heritage site. It is also
+                called as the Water Fort since there are large number of water
+                bodies found inside the premises. Earlier it was said that it
+                had 84 water bodies but now 22 exist and it is said that an army
+                of 50,000 soldiers could stay there for four years without the
+                thirst of water.
+              </p>
+            </div>
+            <div class="kumbhalgarh-fort">
+              <h3 class="content-heading">Kumbhalgarh Fort</h3>
+              <img class="content-img" src="Images\kumbalgarh-fort.jpg" />
+              <p class="content-para">
+                Kumbhalgarh Fort is one of the biggest forts because of its
+                massive construction and long fortifications which is extended
+                to an area of 36 kms and is stated to be the second longest wall
+                in the world, next only to the Great Wall of China.There are
+                numerous palaces, gardens and temples which adds to its beauty
+                and makes it one of the best places to see in Rajasthan. The
+                Kumbhalgarh Fort was built by Maharana Rana Kumbha in 15th
+                Century from which it has derived its name. It is constructed at
+                a height of 1,914 metres above sea level. Once you plan to visit
+                this fort you will find a zigzag road which goes through deep
+                ravines and thick forests which makes it perfect for adventure
+                holiday. With seven massive gates which stands to the testimony
+                of the great structure and has huge watch towers with seven
+                ramparts which is folded with one another with designed walls.
+              </p>
+            </div>
+          </div>
+          <div class="food">
+            <h2 class="section-heading">Traditional Food</h2>
+            <div class="daal-bati">
+              <h3 class="content-heading">Daal Bati</h3>
+              <img class="content-img" src="Images\Food.jpg" />
+              <p class="content-para">
+                A meal in Rajasthan is incomplete without Dal Bati Churma, one
+                of Rajasthan's most savoured, complete meals. The dish itself
+                consists of Dal (Lentils), Baati (wheat bread balls) and Churma
+                (Sweet powdered cereal), served with red chilli on top of it
+                along with spicy garlic chutney with dry fruits like cashew,
+                pistachio, almonds or raisins. The wheat bread ball is dipped in
+                pure ghee and served hot in an earthen pot with a small vessel
+                of Dal, red chilli, spicy garlic chutney.
+              </p>
+            </div>
+            <div class="laal-maas">
+              <h3 class="content-heading">Laal Maas</h3>
+              <img class="content-img" src="Images\Laal Maas.jpg" />
+              <p class="content-para">
+                Lal Maas contains spicy, mouth-watering tanginess of a
+                traditional Rajasthani dish. A red, spicy meat curry that's
+                straight out of the Royal kitchens of Rajasthan, this dish is
+                prepared using prime portions of mutton that's marinated in curd
+                and spices. The dish is a result of the extreme heat and limited
+                access to water that was prevalent in this region. Its unique
+                preparation style serves the purpose of preserving it well after
+                it's cooked and the spices enhance ones immunity and metabolism.
+                Lal Maas is best relished with rotis and rice.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="api">
+      <h2 class="section-heading">Weather Forecast</h2>
+      <p class="content-para">
+        The weather forecast is the part of the challange where I have to use an
+        API. I have used weatherapi for forecasting the weather. It provides
+        info about the weather for most of the places.
+      </p>
+      <form class="api-form" action="/report" method="post">
+        <p class="api-para">Enter city name</p>
+        <input class="api-input" name="cityName" placeholder="City Name" />
+        <button class="api-btn" type="submit">Search</button>
+      </form>
+    </section>
+    <section id="social">
+      <div class="social">
+        <a
+          class="social-link"
+          href="mailto:mharorajasthanvitb@gmail.com"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/email.png" alt="gmail" />
+        </a>
+        <a
+          class="social-link"
+          href="https://github.com/Pmaheshwari11"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/github.png" alt="github" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/parth-dudani-97b594250"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/linkedin.png" alt="linkein" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.instagram.com/mharo.rajasthan_vitb/"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/instagram.png" alt="instagram" />
+        </a>
+      </div>
+      <p class="copyright">&COPY;Parth Dudani</p>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Rajasthan Club's Task</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Amita&family=Kalam&family=Merriweather&family=Playfair+Display&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- StyleSheet -->
+    <link rel="StyleSheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="navbar">
+      <img
+        class="brand-logo"
+        src="Images/photo_2023-08-30_20-41-26-removebg-preview.png"
+      />
+      <div class="navbar-brand">म्हारो राजस्थान</div>
+      <div class="navbar-items">
+        <button class="nav-button" onclick="nav_btn()">
+          <img class="nav-img" src="Images/menu.png" />
+        </button>
+        <div class="nav-links">
+          <a class="link" href="/">Home</a>
+          <a class="link" href="/about">Members</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="welcome">
+      <img
+        class="welcome-img"
+        src="Images/pngtree-indian-man-with-turban-rajasthani-men-welcome-namaste-greetings-png-image_6119228.png"
+      />
+      <h1 class="welcome-text">खम्मा घणी सा</h1>
+    </div>
+
+    <section id="content">
+      <div class="about-us">
+        <h2 class="content-heading">About Us</h2>
+        <div class="flex-container">
+          <p class="about-para">
+            We aim on promoting the Rich Culture, Heritage, Literature and
+            Regional Language of our state among the college students. The club
+            will organize various activities such as Folk Dance, Folk Music
+            Nights, Traditional Attire Day, Rajasthani Literature and Art
+            Competition, Rajasthani Food Fest and many more. The club will also
+            organize various events such as dance performances and traditional
+            festivals celebrations. The primary goal of the Rajasthan Club is to
+            create awareness and interest among students about the rich heritage
+            and culture of our state and provide a platform to showcase their
+            talent and skills. We also aim to provide a familiar environment to
+            the students and help them connect with the students of Rajasthan.
+          </p>
+          <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img class="slides" src="Images/kalbeliya.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Food.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Ghevar.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Gatte Ki Sabji.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Laal Maas.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Mirchi Vada.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Bhavai.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/GHOOMAR.jpg" />
+            </div>
+
+            <div class="mySlides fade">
+              <img class="slides" src="Images/Kacchi Ghodi.jpg" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="Members">
+      <h2 class="content-heading">Our Team</h2>
+      <div class="member-list">
+        <% members.forEach(member => { %>
+        <div class="member">
+          <img class="member-img" src="Images/<%= member.name %>.png" />
+          <p class="member-details post"><%= member.post %></p>
+          <p class="member-details"><%= member.name %></p>
+          <p class="member-details"><%= member.reg_no %></p>
+        </div>
+        <% }) %>
+      </div>
+    </section>
+    <section id="social">
+      <div class="social">
+        <a
+          class="social-link"
+          href="mailto:mharorajasthanvitb@gmail.com"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/email.png" alt="gmail" />
+        </a>
+        <a
+          class="social-link"
+          href="https://github.com/Pmaheshwari11"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/github.png" alt="github" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.linkedin.com/in/parth-dudani-97b594250"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/linkedin.png" alt="linkein" />
+        </a>
+        <a
+          class="social-link"
+          href="https://www.instagram.com/mharo.rajasthan_vitb/"
+          target="_blank"
+        >
+          <img class="social-img" src="Images/instagram.png" alt="instagram" />
+        </a>
+      </div>
+      <p class="copyright">&COPY;Parth Dudani</p>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>

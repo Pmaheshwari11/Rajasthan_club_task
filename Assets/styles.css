@@ -1,0 +1,385 @@
+body {
+  margin: 0%;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 6%;
+  margin-bottom: 50px;
+}
+
+.brand-logo {
+  width: 150px;
+}
+
+.navbar-brand {
+  font-size: 40px;
+  font-family: "Amita";
+  color: #f77d02;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-items {
+  display: flex;
+  justify-content: space-around;
+  width: 60%;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+  font-family: "Merriweather";
+  font-size: 30px;
+  align-items: center;
+}
+
+.link {
+  text-decoration: none;
+  color: black;
+}
+
+.link:hover {
+  color: #ff972e;
+  font-weight: 600;
+}
+
+.nav-button {
+  display: none;
+}
+
+.welcome {
+  display: flex;
+  padding: 30px 6%;
+  justify-content: center;
+  align-items: center;
+}
+
+.welcome-img {
+  height: 200px;
+  margin-right: 50px;
+  animation: welcome-img 2s ease-out;
+}
+
+.welcome-text {
+  font-family: "Kalam";
+  font-size: 50px;
+  animation: welcome-text 2s ease-out;
+}
+
+.section-heading {
+  font-family: "Merriweather";
+  font-size: 35px;
+  color: #ff8635;
+  text-align: center;
+}
+
+#content {
+  padding: 30px 6%;
+  margin: 20px 0;
+}
+
+.content-heading {
+  font-family: "Playfair Display";
+  font-size: 35px;
+}
+
+.content-img {
+  height: 300px;
+}
+
+.content-para {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.flex-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 50px;
+}
+
+.about-para {
+  font-family: "Poppins";
+  font-size: 20px;
+}
+
+.mySlides {
+  height: 400px;
+}
+
+.slides {
+  width: 100%;
+  max-height: 100%;
+}
+
+#Members {
+  padding: 30px 6%;
+  margin: 20px 0;
+}
+
+.member-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+.member {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  width: 200px;
+  align-items: center;
+}
+
+.member-img {
+  width: 100px;
+}
+
+.member-details {
+  font-family: "Kalam";
+  font-size: 18px;
+}
+
+.post {
+  font-family: "Roboto Slab";
+  font-size: 25px;
+}
+
+#api {
+  padding: 30px 6%;
+  margin: 20px 0;
+}
+
+.api-form {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.api-para {
+  font-family: "Kalam";
+  font-size: 20px;
+}
+
+.api-input {
+  border-radius: 10px;
+  border: none;
+  height: 40px;
+  width: 200px;
+  background-color: #f77d02;
+  color: #000000;
+  text-align: center;
+  margin-bottom: 30px;
+  font-family: "Poppins";
+}
+
+.api-btn {
+  border: none;
+  border-radius: 50px;
+  background-color: #000000;
+  color: #ffffff;
+  width: 100px;
+  height: 30px;
+  font-size: 18px;
+  font-family: "Merriweather";
+}
+
+.api-btn:hover {
+  background-color: #ff972e;
+  color: #000000;
+}
+
+#social {
+  padding: 30px 0 10px;
+  background-color: #f77d02;
+}
+
+.social {
+  display: flex;
+  gap: 30px;
+  justify-content: center;
+}
+
+.social-img {
+  width: 80px;
+}
+
+.copyright {
+  font-size: 20px;
+  font-family: "Poppins";
+  text-align: center;
+}
+
+::placeholder {
+  color: #000000;
+}
+
+@keyframes welcome-img {
+  0% {
+    transform: translatey(-20vh);
+  }
+
+  75% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes welcome-text {
+  0% {
+    transform: translateX(-100vw);
+  }
+
+  75% {
+    transform: translateX(0);
+  }
+}
+
+@media (min-width: 756px) and (max-width: 1024px) {
+  .navbar-brand {
+    font-size: 35px;
+  }
+
+  .navbar-items {
+    flex-flow: column;
+    align-items: end;
+  }
+
+  .nav-img {
+    height: 40px;
+    display: block;
+  }
+
+  .nav-button {
+    border: none;
+    background-color: transparent;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .link {
+    margin: 10px;
+  }
+
+  .active {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    align-items: flex-end;
+    margin-top: 30px;
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .about-para {
+    font-family: "Poppins";
+    font-size: 20px;
+  }
+
+  .mySlides {
+    height: 500px;
+  }
+
+  .slides {
+    width: 100%;
+  }
+}
+
+@media (max-width: 756px) {
+  .navbar-brand {
+    font-size: 30px;
+    display: none;
+  }
+
+  .navbar-items {
+    flex-flow: column;
+    align-items: end;
+    width: 20%;
+  }
+
+  .nav-img {
+    height: 40px;
+    display: block;
+  }
+
+  .nav-button {
+    border: none;
+    background-color: transparent;
+    display: block;
+  }
+
+  .nav-links {
+    display: none;
+  }
+  .link {
+    margin: 10px;
+  }
+
+  .active {
+    display: flex;
+    flex-flow: column;
+    align-self: center;
+    align-items: flex-end;
+  }
+
+  .welcome-img {
+    height: 150px;
+    margin-right: 10px;
+  }
+
+  .welcome-text {
+    font-family: "Kalam";
+    font-size: 35px;
+  }
+
+  .flex-container {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .content-heading {
+    font-family: "Playfair Display";
+    font-size: 30px;
+  }
+
+  .content-img {
+    width: 100%;
+    height: auto;
+  }
+
+  .content-para {
+    font-family: "Poppins";
+    font-size: 20px;
+  }
+
+  .about-para {
+    font-family: "Poppins";
+    font-size: 20px;
+  }
+
+  .mySlides {
+    height: 300px;
+  }
+
+  .slides {
+    width: 100%;
+  }
+
+  .social {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+  }
+
+  .social-img {
+    width: 60px;
+  }
+}
